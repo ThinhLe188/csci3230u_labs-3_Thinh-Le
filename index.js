@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 var app = express();
 
-app.set('port', 8080);
+app.set('port', 8000);
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Return the index for any other GET request

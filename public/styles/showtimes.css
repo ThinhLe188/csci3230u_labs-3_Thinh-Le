@@ -67,3 +67,23 @@ button {
     color: white;
     font-weight: bolder
 }
+
+#showtimes-list {
+    margin-top: 4rem;
+}
+
+.movie {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.title {
+    width: 15rem;
+    font-weight: bolder;
+}
+
+.showtime {
+    margin-bottom: 0.5rem;
+}
