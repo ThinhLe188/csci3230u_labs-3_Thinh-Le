@@ -1,0 +1,23 @@
+{
+  "name": "csci3230u_labs-3_thinh-le",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "open": "start http://localhost:8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThinhLe188/csci3230u_labs-3_Thinh-Le.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThinhLe188/csci3230u_labs-3_Thinh-Le/issues"
+  },
+  "homepage": "https://github.com/ThinhLe188/csci3230u_labs-3_Thinh-Le#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showtimes</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="styles/showtimes.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="scripts/showtimes.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Showtimes</h1>
+            <h3>Give me something to do!</h3>
+        </div>
+    </header>
+    <main>
+        <section id="section-left">
+            <div>
+                <label>Location:</label>
+                <input type="text" list="location-list" id="location-picker">
+                <datalist id="location-list"></datalist>
+            </div>
+            <div>
+                <label>Date:</label>
+                <input type="text" id="date-picker">
+            </div>
+            <button id="search-btn">Search</button>
+        </section>
+        <section id="section-right">
+        </section>
+    </main>
+</body>
+</html>
