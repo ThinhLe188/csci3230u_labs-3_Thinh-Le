@@ -2,7 +2,7 @@ $(document).ready(function() {
     var showtimesData = []
 
     $(function() {
-        $("#date-picker").datepicker();
+        $('#date-picker').datepicker();
     });
 
     $('#search-btn').click(function() {
@@ -44,8 +44,37 @@ function displayMovieList(location, date, data) {
 
             var movieShowtimes = $('<div class="movie"></div>');
             movieShowtimes.append(title, showtimes);
-            
+
             $('#showtimes-list').append(movieShowtimes);
         }
     });
+
+    $('.title').click(function() {
+        var movie = data.find(movie => movie.title === $(this).text());
+        displayMovie(movie.id);
+    });
+}
+
+function displayMovie(id) {
+    $('#section-right').empty();
+
+    fetch(`https://www.omdbapi.com/?i=${id}&apikey=a63dabdc`)
+        .then(res => res.json())
+        .then(data => {
+            $('#section-right').append('<img id="poster" src=' + data.Poster + '>');
+
+            var headers = ['Title', 'Year', 'Genre', 'Runtime', 'Director', 'Writer', 'Actors'];
+
+            var movie = $('<div id="movie"></div>');
+            headers.forEach(function(header) {
+                var info = $('<div class="info"></div>');
+
+                info.append('<label class="label">' + header + ':</label>');
+                info.append('<label class="content">' + data[header] + '</label>');
+
+                movie.append(info);
+            });
+            
+            $('#section-right').append(movie);
+        });
 }

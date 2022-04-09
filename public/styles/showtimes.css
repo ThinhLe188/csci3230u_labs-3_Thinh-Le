@@ -87,3 +87,31 @@ button {
 .showtime {
     margin-bottom: 0.5rem;
 }
+
+.title:hover {
+    color: #db4d65;
+}
+
+#poster {
+    display: block;
+    margin: 0 auto;
+    max-width: 10rem;
+    max-height: 20rem;
+}
+
+#movie {
+    margin-top: 4rem;
+}
+
+.info {
+    margin-bottom: 2rem;
+}
+
+.label {
+    margin-right: 2.5rem;
+}
+
+.content {
+    text-align: left;
+    font-weight: normal;
+}
